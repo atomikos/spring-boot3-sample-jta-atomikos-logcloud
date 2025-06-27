@@ -28,3 +28,7 @@ spring:
 atomikos:
   properties:
     transaction-manager-unique-name: logcloud
+
+logging:
+  level:
+    `[com.atomikos]': DEBUG
