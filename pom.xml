@@ -13,7 +13,7 @@
 	<name>Spring Boot Atomikos JTA Sample</name>
 	<description>Spring Boot Atomikos JTA Sample</description>
 	<properties>
-		<atomikos.version>6.0.114</atomikos.version>
+		<atomikos.version>6.0.114.EVAL</atomikos.version>
 	</properties>
 	<dependencies>
 		<!-- Compile -->
@@ -87,10 +87,10 @@
 			<version>2.0.1</version>
 			<scope>provided</scope>
 		</dependency>
-<dependency>
-    <groupId>jakarta.xml.bind</groupId>
-    <artifactId>jakarta.xml.bind-api</artifactId>
-</dependency>
+		<dependency>
+			<groupId>jakarta.xml.bind</groupId>
+			<artifactId>jakarta.xml.bind-api</artifactId>
+		</dependency>
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -102,7 +102,12 @@
 			<artifactId>spring-boot-configuration-processor</artifactId>
 			<optional>true</optional>
 		</dependency>
-
+		<dependency>
+			<groupId>com.atomikos</groupId>
+			<artifactId>transactions-hibernate4</artifactId>
+			<version>${atomikos.version}</version>
+			<classifier>jakarta</classifier>
+		</dependency>
 		<!-- Test -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
