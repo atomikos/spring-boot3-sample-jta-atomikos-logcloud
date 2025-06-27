@@ -1,4 +1,4 @@
-# spring-bootE-sample-jta-atomikos-logcloud
+# spring-boot3-sample-jta-atomikos-logcloud
 Sample project showing how easy it is to do XA with clustered, cloud-native transaction logging and recovery. You can run as many instances of this application as you like: scale up and down dynamically or kill any node with your chaos monkey and XA recovery simply works (as long as at least one node is up). This gives you self-healing XA transactions in the cloud...
 
 ## Highlights
